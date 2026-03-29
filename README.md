@@ -10,7 +10,6 @@
 - **Built an end-to-end workflow**: collection → auditing → preprocessing → modelling → evaluation → documentation, with datasets managed on **Google Cloud Platform (GCP)**.
 
 ## Demo
-- **Open locally**: double-click `MachineLearningModelsforWeatherPrediction.html`
 - **Notebook (local)**: run `MachineLearningModelsforWeatherPrediction.ipynb` with Jupyter (see [Usage](#usage)).
 
 ## Google Colab
@@ -109,7 +108,7 @@ jupyter notebook MachineLearningModelsforWeatherPrediction.ipynb
 ## Model Performance
 - **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
 - LSTM/GRU families generally perform strongly for sequence forecasting; XGBoost is competitive for certain targets; classical baselines (e.g., ARIMA) can be strong on specific humidity patterns.
-- Full comparisons, error diagnostics, and plots are documented in the notebook and exported HTML report.
+- Full comparisons, error diagnostics, and plots are documented in the Jupyter notebook.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
