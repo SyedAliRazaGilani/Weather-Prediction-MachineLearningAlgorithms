@@ -5,7 +5,7 @@
 ## Overview
 This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs, focusing on experimenting and finding the perfect ML model for time series modelling. The model is then converted to tensorflow lite for deployment on cloud or edge devices.
 
-## 📓 Google Colab
+## Google Colab
 
 **Open this notebook on Colab (from GitHub):**
 
@@ -72,8 +72,3 @@ This work also explores deployment constraints for smart-city style sensor strea
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-- Hillingdon Council UK for providing the weather data
-- Contributors and maintainers of the machine learning libraries used
-- Open source community for their valuable resources 
