@@ -2,6 +2,9 @@
 
 ![Demo Screenshot](demo-photo.png)
 
+## Overview
+This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs, focusing on experimenting and finding the perfect ML model for time series modelling. The model is then converted to tensorflow lite for deployment on cloud or edge devices.
+
 ## Project highlights
 - **Designed and experimentally evaluated** time-series ML models (SVR/SVM, XGBoost, LSTM, regression baselines, and clustering) in Python using TensorFlow and scikit-learn.
 - **Best results (centralized inference)**: \(R^2 = 0.8451\) and **MAE = 0.0164** on humidity / mould-risk related prediction experiments.
@@ -20,9 +23,6 @@
 
 Direct link: [colab.research.google.com/.../MachineLearningModelsforWeatherPrediction.ipynb](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
 
-
-## Overview
-This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs.
 
 ## Model Performance
 - **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
