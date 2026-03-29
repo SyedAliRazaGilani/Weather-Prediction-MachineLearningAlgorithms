@@ -7,9 +7,7 @@ This project benchmarks multiple machine learning approaches for **temperature /
 
 ## Google Colab
 
-**Open this notebook on Colab (from GitHub):**
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
+**Open this notebook on Colab** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
 
 
 ## Project highlights
