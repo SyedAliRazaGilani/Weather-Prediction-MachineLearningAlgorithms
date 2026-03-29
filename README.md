@@ -11,8 +11,6 @@ This project benchmarks multiple machine learning approaches for **temperature /
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
 
-Direct link: [colab.research.google.com/.../MachineLearningModelsforWeatherPrediction.ipynb](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
-
 
 ## Project highlights
 - **Designed and experimentally evaluated** time-series ML models (SVR/SVM, XGBoost, LSTM, regression baselines, and clustering) in Python using TensorFlow and scikit-learn.
@@ -61,24 +59,6 @@ This work also explores deployment constraints for smart-city style sensor strea
 9. ANN (Artificial Neural Network)
 10. RNN (Recurrent Neural Network)
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms.git
-cd Weather-Prediction-MachineLearningAlgorithms
-```
-
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ## Dependencies
 - tensorflow>=2.0.0
@@ -89,12 +69,6 @@ pip install -r requirements.txt
 - matplotlib>=3.3.0
 - statsmodels>=0.12.0
 - psutil>=5.8.0
-
-## Usage
-Run the Jupyter notebook:
-```bash
-jupyter notebook MachineLearningModelsforWeatherPrediction.ipynb
-```
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
