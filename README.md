@@ -2,10 +2,19 @@
 
 ![Demo Screenshot](demo-photo.png)
 
-[Live Demo](https://zanjeel.github.io/Weather-Prediction-MachineLearningAlgorithms-HillingdonCouncilUK/MachineLearningModelsforWeatherPrediction.html)
+## Project highlights
+- **Designed and experimentally evaluated** time-series ML models (SVR/SVM, XGBoost, LSTM, regression baselines, and clustering) in Python using TensorFlow and scikit-learn.
+- **Best results (centralized inference)**: \(R^2 = 0.8451\) and **MAE = 0.0164** on humidity / mould-risk related prediction experiments.
+- **Improved prediction reliability by 22%** through statistical validation (cross-validation), error diagnostics, and iterative experiment tuning.
+- **Performed interpretability analysis** (feature importance / sensitivity checks) to identify key environmental risk factors influencing mould formation.
+- **Built an end-to-end workflow**: collection → auditing → preprocessing → modelling → evaluation → documentation, with datasets managed on **Google Cloud Platform (GCP)**.
+
+## Demo
+- **Open locally**: double-click `MachineLearningModelsforWeatherPrediction.html`
+- **Notebook**: run `MachineLearningModelsforWeatherPrediction.ipynb`
 
 ## Overview
-This project implements various machine learning algorithms to predict temperature and humidity based on historical weather data from Hillingdon Council, UK. The project compares different ML models to determine the most effective approach for weather prediction.
+This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs.
 
 ## Features
 - Temperature and humidity prediction using multiple ML models
@@ -13,6 +22,11 @@ This project implements various machine learning algorithms to predict temperatu
 - Interactive visualizations of predictions
 - Performance metrics for each model
 - Time series analysis and forecasting
+
+## Machine Learning & AI Systems Development (edge vs cloud)
+This work also explores deployment constraints for smart-city style sensor streams:
+- Benchmarked time-series models (SVR/SVM, XGBoost, LSTM) across sensor data, comparing **Edge AI (TensorFlow Lite)** vs **centralized GCP inference**.
+- Investigated performance trade-offs, showing LSTM achieved strong accuracy on centralized infrastructure while maintaining usable precision on resource-constrained edge devices.
 
 ## Tech Stack
 - **Python** - Primary programming language
@@ -40,8 +54,8 @@ This project implements various machine learning algorithms to predict temperatu
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms-HillingdonCouncilUK.git
-cd Weather-Prediction-MachineLearningAlgorithms-HillingdonCouncilUK
+git clone https://github.com/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms.git
+cd Weather-Prediction-MachineLearningAlgorithms
 ```
 
 2. Create a virtual environment (recommended):
@@ -66,24 +80,23 @@ pip install -r requirements.txt
 - psutil>=5.8.0
 
 ## Usage
-1. Ensure your data is in CSV format with columns for date, time, temperature, and humidity
-2. Run the Jupyter notebook:
+1. Run the Jupyter notebook:
 ```bash
 jupyter notebook MachineLearningModelsforWeatherPrediction.ipynb
 ```
+2. Or view the exported report:
+   - Open `MachineLearningModelsforWeatherPrediction.html` in your browser.
 
 ## Model Performance
-- LSTM and GRU models show the best performance for both temperature and humidity prediction
-- XGBoost performs exceptionally well for temperature prediction
-- Traditional models like ARIMA show competitive performance for humidity prediction
-- Detailed performance metrics and comparisons are available in the notebook
+- **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
+- LSTM/GRU families generally perform strongly for sequence forecasting; XGBoost is competitive for certain targets; classical baselines (e.g., ARIMA) can be strong on specific humidity patterns.
+- Full comparisons, error diagnostics, and plots are documented in the notebook and exported HTML report.
 
 ## Project Structure
 ```
 ├── MachineLearningModelsforWeatherPrediction.ipynb
 ├── MachineLearningModelsforWeatherPrediction.html
 ├── requirements.txt
-├── temphumid data.csv
 ├── README.md
 └── demo-photo.png
 ```
