@@ -24,16 +24,14 @@ Direct link: [colab.research.google.com/.../MachineLearningModelsforWeatherPredi
 
 `https://colab.research.google.com/github/<owner>/<repo>/blob/<branch>/<path-to-notebook>.ipynb`
 
-After it opens, run the first cell to install dependencies if needed, e.g. `!pip install -r https://raw.githubusercontent.com/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/main/requirements.txt` (or upload `requirements.txt` and use `!pip install -r requirements.txt`).
-
-**How to add this file to Colab yourself**
-
-1. **From GitHub (recommended):** Push `MachineLearningModelsforWeatherPrediction.ipynb` to your repo, then use the badge link above or in Colab go to **File → Open notebook → GitHub**, sign in, pick `SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms` and select the notebook.
-2. **Upload from your computer:** Go to [colab.research.google.com](https://colab.research.google.com) → **File → Upload notebook** → choose `MachineLearningModelsforWeatherPrediction.ipynb` from this project folder.
-3. **Drag and drop:** Open Colab, then drag the `.ipynb` file into the browser tab (Colab will open it).
 
 ## Overview
 This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs.
+
+## Model Performance
+- **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
+- LSTM/GRU families generally perform strongly for sequence forecasting; XGBoost is competitive for certain targets; classical baselines (e.g., ARIMA) can be strong on specific humidity patterns.
+- Full comparisons, error diagnostics, and plots are documented in the Jupyter notebook.
 
 ## Features
 - Temperature and humidity prediction using multiple ML models
@@ -103,12 +101,6 @@ Run the Jupyter notebook:
 ```bash
 jupyter notebook MachineLearningModelsforWeatherPrediction.ipynb
 ```
-
-
-## Model Performance
-- **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
-- LSTM/GRU families generally perform strongly for sequence forecasting; XGBoost is competitive for certain targets; classical baselines (e.g., ARIMA) can be strong on specific humidity patterns.
-- Full comparisons, error diagnostics, and plots are documented in the Jupyter notebook.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
