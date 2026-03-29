@@ -1,11 +1,11 @@
-# Weather Prediction using Machine Learning Algorithms - Hillingdon Council UK
+# 🌦️ Weather Prediction using Machine Learning Algorithms - Hillingdon Council UK
 
 ![Demo Screenshot](demo-photo.png)
 
 ## Overview
 This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs, focusing on experimenting and finding the perfect ML model for time series modelling. The model is then converted to tensorflow lite for deployment on cloud or edge devices.
 
-## Google Colab
+## 📓 Google Colab
 
 **Open this notebook on Colab (from GitHub):**
 
@@ -20,24 +20,24 @@ This project benchmarks multiple machine learning approaches for **temperature /
 - **Built an end-to-end workflow**: collection → auditing → preprocessing → modelling → evaluation → documentation, with datasets managed on **Google Cloud Platform (GCP)**.
 
 
-## Model Performance
+## 📊 Model Performance
 - **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
 - LSTM/GRU families generally perform strongly for sequence forecasting; XGBoost is competitive for certain targets; classical baselines (e.g., ARIMA) can be strong on specific humidity patterns.
 - Full comparisons, error diagnostics, and plots are documented in the Jupyter notebook.
 
-## Features
+## 🧩 Features
 - Temperature and humidity prediction using multiple ML models
 - Comparative analysis of different algorithms
 - Interactive visualizations of predictions
 - Performance metrics for each model
 - Time series analysis and forecasting
 
-## Machine Learning & AI Systems Development (edge vs cloud)
+## 🤖 Machine Learning & AI Systems Development (edge vs cloud)
 This work also explores deployment constraints for smart-city style sensor streams:
 - Benchmarked time-series models (SVR/SVM, XGBoost, LSTM) across sensor data, comparing **Edge AI (TensorFlow Lite)** vs **centralized GCP inference**.
 - Investigated performance trade-offs, showing LSTM achieved strong accuracy on centralized infrastructure while maintaining usable precision on resource-constrained edge devices.
 
-## Tech Stack
+## 🛠️ Tech Stack
 - **Python** - Primary programming language
 - **TensorFlow** - Deep learning framework
 - **Scikit-learn** - Machine learning library
@@ -47,7 +47,7 @@ This work also explores deployment constraints for smart-city style sensor strea
 - **Matplotlib** - Data visualization
 - **Statsmodels** - Statistical modeling
 
-## Machine Learning Models Implemented
+## 🧠 Machine Learning Models Implemented
 1. LSTM (Long Short-Term Memory)
 2. GRU (Gated Recurrent Unit)
 3. Bidirectional LSTM
@@ -60,7 +60,7 @@ This work also explores deployment constraints for smart-city style sensor strea
 10. RNN (Recurrent Neural Network)
 
 
-## Dependencies
+## 📦 Dependencies
 - tensorflow>=2.0.0
 - numpy>=1.19.2
 - pandas>=1.2.0
@@ -73,7 +73,7 @@ This work also explores deployment constraints for smart-city style sensor strea
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 - Hillingdon Council UK for providing the weather data
 - Contributors and maintainers of the machine learning libraries used
 - Open source community for their valuable resources 
