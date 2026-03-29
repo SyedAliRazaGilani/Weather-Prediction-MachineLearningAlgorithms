@@ -20,10 +20,6 @@
 
 Direct link: [colab.research.google.com/.../MachineLearningModelsforWeatherPrediction.ipynb](https://colab.research.google.com/github/SyedAliRazaGilani/Weather-Prediction-MachineLearningAlgorithms/blob/main/MachineLearningModelsforWeatherPrediction.ipynb)
 
-**How it works:** Colab can load any `.ipynb` that is **public on GitHub**. The URL pattern is:
-
-`https://colab.research.google.com/github/<owner>/<repo>/blob/<branch>/<path-to-notebook>.ipynb`
-
 
 ## Overview
 This project benchmarks multiple machine learning approaches for **temperature / humidity forecasting** (and related mould-risk indicators) using historical environmental sensor data from **Hillingdon Council (UK)**. It focuses on comparative evaluation, time-series modelling, and practical deployment trade-offs.
