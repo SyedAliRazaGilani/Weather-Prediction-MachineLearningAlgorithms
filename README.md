@@ -80,12 +80,11 @@ pip install -r requirements.txt
 - psutil>=5.8.0
 
 ## Usage
-1. Run the Jupyter notebook:
+Run the Jupyter notebook:
 ```bash
 jupyter notebook MachineLearningModelsforWeatherPrediction.ipynb
 ```
-2. Or view the exported report:
-   - Open `MachineLearningModelsforWeatherPrediction.html` in your browser.
+
 
 ## Model Performance
 - **Best reported centralized result**: \(R^2 = 0.8451\), **MAE = 0.0164** (see notebook for full experimental setup and metrics tables).
